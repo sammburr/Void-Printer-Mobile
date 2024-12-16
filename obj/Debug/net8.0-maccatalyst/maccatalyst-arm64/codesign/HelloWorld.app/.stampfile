@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/samburford/Projects/DotNet/HelloWorld/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/samburford/Projects/DotNet/HelloWorld/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/HelloWorld.app

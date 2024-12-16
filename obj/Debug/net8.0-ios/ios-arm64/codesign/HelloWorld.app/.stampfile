@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign E552351D6E5063242420A7BF95593B9D944A67C6 --entitlements /Users/samburford/Projects/DotNet/HelloWorld/obj/Debug/net8.0-ios/ios-arm64/Entitlements.xcent /Users/samburford/Projects/DotNet/HelloWorld/bin/Debug/net8.0-ios/ios-arm64/HelloWorld.app

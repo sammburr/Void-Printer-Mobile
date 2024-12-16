@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:HelloWorld.ViewModels"
+             x:Class="HelloWorld.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <StackLayout Padding="10">
+
+        <CollectionView HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        x:Name="ActivityCollection">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Horizontal"
+                                Span="7"
+                                HorizontalItemSpacing="0"
+                                VerticalItemSpacing="0" />
+            </CollectionView.ItemsLayout>
+        </CollectionView>
+
+        <Grid>
+            <!-- Text Area (Editor) -->
+            <Frame  Padding="15"
+                    BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
+                    Margin="10"
+                    CornerRadius="40">
+                <Editor BackgroundColor="Transparent"
+                        TextColor="{AppThemeBinding Light=Black, Dark=White}"
+                        FontSize="14"
+                        HeightRequest="150"
+                        VerticalOptions="Start"
+                        TextChanged="OnTextChanged" 
+                        x:Name="TextArea"/>
+            </Frame>
+
+
+            <!-- Label on top of the Text Area -->
+            <Label Text="TODAY'S NOTE"
+                   TextColor="Gray"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" 
+                   x:Name="TextAreaOverlayLabel" />
+        </Grid>
+
+        <BoxView HeightRequest="10" 
+                 VerticalOptions="FillAndExpand"
+                 BackgroundColor="Transparent" />
+
+        <Button Text="Clear Stats"
+                Clicked="ClearStats"/>
+
+    </StackLayout>
+
+</ContentPage>
